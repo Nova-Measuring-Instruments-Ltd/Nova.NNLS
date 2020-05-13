@@ -57,7 +57,7 @@ int nnls::optimize()
  
     computeObjGrad();
     // check the descent condition
-    if (out.iter % M == 0) {
+    if (out.iter != 0 && out.iter % M == 0) {
       checkDescentUpdateBeta();
     }
     if (out.iter % 10 == 0)
