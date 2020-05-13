@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NNLS", "NNLS\NNLS.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Nova.NNLS.UnitTests", "Nova.NNLS.UnitTests\Nova.NNLS.UnitTests.vcxproj", "{25378AC0-FE2F-4D52-94CF-A75C6328CD39}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Nova.NNLS.CLIBridge", "Nova.NNLS.CLIBridge\Nova.NNLS.CLIBridge.vcxproj", "{4730367A-9984-4F1C-A9C9-BE1F485DFDC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,10 @@ Global
 		{25378AC0-FE2F-4D52-94CF-A75C6328CD39}.Debug|x64.Build.0 = Debug|x64
 		{25378AC0-FE2F-4D52-94CF-A75C6328CD39}.Release|x64.ActiveCfg = Release|x64
 		{25378AC0-FE2F-4D52-94CF-A75C6328CD39}.Release|x64.Build.0 = Release|x64
+		{4730367A-9984-4F1C-A9C9-BE1F485DFDC7}.Debug|x64.ActiveCfg = Debug|x64
+		{4730367A-9984-4F1C-A9C9-BE1F485DFDC7}.Debug|x64.Build.0 = Debug|x64
+		{4730367A-9984-4F1C-A9C9-BE1F485DFDC7}.Release|x64.ActiveCfg = Release|x64
+		{4730367A-9984-4F1C-A9C9-BE1F485DFDC7}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
