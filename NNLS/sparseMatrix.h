@@ -30,7 +30,7 @@
 
 namespace nsNNLS {
   
-  class sparseMatrix : public matrix {
+  class NNLS_API sparseMatrix : public matrix {
   private:
     double* data;
     size_t* ridx;

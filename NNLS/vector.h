@@ -25,6 +25,7 @@
 #ifndef _MY_VECTOR_H
 #define _MY_VECTOR_H
 
+#include "NNLSDefinitions.h"
 #include <cstring>
 #include <cmath>
 
@@ -32,7 +33,7 @@
 // Does minimal error checking
 
 namespace nsNNLS {
-  class vector {
+  class NNLS_API vector {
     size_t size;
     double* data;
     bool external;

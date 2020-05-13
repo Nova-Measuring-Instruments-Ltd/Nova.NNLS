@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="3rdParty">
+      <UniqueIdentifier>{695324ef-5ec3-4504-8b50-16f3d4271fd8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="denseMatrix.h">
+      <Filter>3rdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="matrix.h">
+      <Filter>3rdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="nnls.h">
+      <Filter>3rdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="sparseMatrix.h">
+      <Filter>3rdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="vector.h">
+      <Filter>3rdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="NNLSDefinitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="denseMatrix.cc">
+      <Filter>3rdParty</Filter>
+    </ClCompile>
+    <ClCompile Include="nnls.cc">
+      <Filter>3rdParty</Filter>
+    </ClCompile>
+    <ClCompile Include="sparseMatrix.cc">
+      <Filter>3rdParty</Filter>
+    </ClCompile>
+    <ClCompile Include="nnlsDriver.cc">
+      <Filter>3rdParty</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README">
+      <Filter>3rdParty</Filter>
+    </None>
+    <None Include="LICENSE">
+      <Filter>3rdParty</Filter>
+    </None>
+    <None Include="makefile">
+      <Filter>3rdParty</Filter>
+    </None>
+  </ItemGroup>
+</Project>

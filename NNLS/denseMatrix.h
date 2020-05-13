@@ -28,7 +28,7 @@ namespace nsNNLS {
 
 #define forall(x) for (size_t x = 0; x < size; x++)
 
-  class denseMatrix : public matrix {
+  class NNLS_API denseMatrix : public matrix {
     size_t size;
     double* data;
     bool external;              // is data managed externally

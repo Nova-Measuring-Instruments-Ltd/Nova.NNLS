@@ -26,7 +26,7 @@
 #include <ctime>
 
 namespace nsNNLS {
-  class nnls {
+  class NNLS_API nnls {
     // The variables used during compute time
   private:                      
     vector* x;                  // The solution -- also current iterate

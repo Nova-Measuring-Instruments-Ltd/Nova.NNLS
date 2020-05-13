@@ -29,7 +29,7 @@
 #include "vector.h"
 
 namespace nsNNLS {
-  class matrix {
+  class NNLS_API matrix {
     size_t M;               /// Num of rows
     size_t N;               /// Num of colums
 
