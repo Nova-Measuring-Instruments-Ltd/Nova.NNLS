@@ -81,18 +81,33 @@ namespace nsNNLS {
 
     // The actual interface to the world!
   public:
-    nnls() { x = 0; A = 0; b = 0; maxit = 0;}
+	  nnls() { 
+		x = NULL; A = NULL; b = NULL; maxit = 0;
+		out.obj = NULL; out.pgnorms = NULL; out.time = NULL;
+	  }
   
     nnls (matrix* A, vector* b, int maxit) {
-      this->x = 0; this->A = A; this->b = b;
+      this->A = A; this->b = b;
+	  this->x = new vector(A->ncols());
       this->maxit = maxit; this->x0 = 0;
-      out.obj = 0; out.iter = -1; out.time = 0;
+      out.iter = -1;
       fset = 0; out.memory = 0;
+	  out.obj = new vector(maxit + 1);
+	  out.pgnorms = new vector(maxit + 1);
+	  out.time = new vector(maxit + 1);
+
       // convergence controlling parameters
       M = 100; beta = 1.0; decay = 0.9; pgtol = 1e-3;  sigma = .01;
     }
 
     nnls (matrix* A, vector* b, vector* x0, int maxit)  { nnls(A, b, maxit); this->x0 = x0;}
+
+	~nnls()	{ 
+		delete x;
+		delete out.obj;
+		delete out.pgnorms;
+		delete out.time;
+	}
 
     // The various accessors and mutators (or whatever one calls 'em!)
 

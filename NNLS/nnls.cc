@@ -189,7 +189,6 @@ void nnls::checkDescentUpdateBeta()
 int nnls::initialize()
 {
   size_t n = A->ncols();
-  x = new vector(n);
   g = new vector(n);
   refx = new vector(n);
   refg = new vector(n);
@@ -206,10 +205,6 @@ int nnls::initialize()
   out.memory += sizeof(size_t)*n;
 
   x->setAll(.5);
-
-  out.obj = new vector(maxit+1);
-  out.pgnorms = new vector(maxit+1);
-  out.time = new vector(maxit+1);
 
   out.memory += sizeof(double)*3*(maxit+1);
 
@@ -275,7 +270,9 @@ int nnls::cleanUp()
   delete oldg;
   delete xdelta;
   delete gdelta;
-  delete fset;
+  free(fset);
   delete refx;
+  delete g;
+  delete refg;
   return 0;
 }
