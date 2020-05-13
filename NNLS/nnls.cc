@@ -38,8 +38,8 @@ int nnls::optimize()
   double step;
   double *px = x->getData();
 
-  fprintf(stderr, "Iter           Obj           ||g||\n");
-  fprintf(stderr, "----------------------------------\n");
+  //fprintf(stderr, "Iter           Obj           ||g||\n");
+  //fprintf(stderr, "----------------------------------\n");
   while (!term) {
     out.iter++;
     term = checkTermination();
@@ -260,7 +260,7 @@ double nnls::normProjectedGradient()
 
 void nnls::showStatus()
 {
-  fprintf(stderr, "%05d\t %010E\t %010E\n", out.iter, out.obj->get(out.iter), out.npg);
+  //fprintf(stderr, "%05d\t %010E\t %010E\n", out.iter, out.obj->get(out.iter), out.npg);
 }
 
 int nnls::cleanUp()
