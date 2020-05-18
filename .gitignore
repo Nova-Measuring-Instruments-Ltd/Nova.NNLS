@@ -7,3 +7,5 @@
 *.suo
 *.cache
 *.ipch
+
+x64/
